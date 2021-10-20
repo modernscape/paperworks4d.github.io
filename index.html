@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <script data-ad-client="ca-pub-1511850082670293" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-74338330-6">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-74338330-6");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-P2LFDD7");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Sawarabi+Gothic&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400"
+        rel="stylesheet" />
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="./style.css" />
+    <!--ホームアイコン-->
+    <!--  <link rel="apple-touch-icon" href="apple-touch-icon_180.png">-->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="./apple-touch-icon_180.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>paper works</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-P2LFDD7"
+            height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="concept">paper works</div>
+    <div id="app">
+        <div id="header">
+            <p id="logo" style="margin-left: 5px">paper works</p>
+            <!-- 表示領域 -->
+            <div id="display">
+                <div id="display-title"></div>
+                <div id="display-date"></div>
+                <div id="display-body"></div>
+                <div id="display-icon"></div>
+            </div>
+        </div>
+        <!-- リスト表示領域 -->
+        <div id="list">
+            <ul id="items" style="list-style-type: none">
+                <li v-for="item in items" :class="item.category" :key="item.id"
+                    :data-id="item.id">
+                    <div class="item-title">{{ item.title }}</div>
+                    <div class="item-body">
+                        <img v-for="path in item.imgPaths"
+                            :src='"./img/"+path' />
+                        <br />
+                        <a v-for="url in item.urls" :href="url"
+                            target="_blank">click to open</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <img id="arrow" src="./img/arrow.png" alt="" />
+        <!-- <div class="files">
+            <div><a href="http://btw.html.xdomain.jp/hosoi_profile/syokureki.pdf" target="syokureki">職歴書</a></div>
+            <div><a href="http://btw.html.xdomain.jp/hosoi_profile/rireki.pdf" target="rireki">履歴書</a></div>
+        </div> -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(function () {
+            var t = 5000;
+            var t2 = 1000;
+            $(".concept").hide();
+            $(".concept").fadeIn(t).fadeOut(t2);
+            $("#arrow").hide();
+            $("#arrow").delay(t).fadeIn(t2);
+            $("#app").hide();
+            $("#app").delay(t).fadeIn(t2);
+        });
+    </script>
+</body>
+
+</html>

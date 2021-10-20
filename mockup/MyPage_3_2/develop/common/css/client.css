@@ -1,0 +1,40 @@
+/*顧客毎のカスタマイズ設定*/
+/*.app-header.navbar .navbar-brand {
+    background-image: url("../images/logo.png");
+    background-size: 115px auto;
+}
+
+.sidebar{
+    background: #2DCCD3;
+}
+
+.sidebar .nav-title {
+    color: #536c79;
+}
+.sidebar .nav-link i, .sidebar .navbar .dropdown-toggle i, .navbar .sidebar .dropdown-toggle i {
+    color: WindowText;
+}
+
+.sidebar .nav-link.active i, .sidebar .navbar .active.dropdown-toggle i, .navbar .sidebar .active.dropdown-toggle i {
+    color: WindowText; 
+}
+.sidebar .nav-link:hover, .sidebar .navbar .dropdown-toggle:hover, .navbar .sidebar .dropdown-toggle:hover {
+    color: #fff;
+    background: WindowText; 
+}
+
+.sidebar .nav-link.nav-link-primary, .sidebar .navbar .nav-link-primary.dropdown-toggle, .navbar .sidebar .nav-link-primary.dropdown-toggle {
+    background: WindowText; 
+}
+
+.sidebar-minimized .sidebar .nav-item:hover > .nav-link, .sidebar-minimized .sidebar .navbar .nav-item:hover > .dropdown-toggle, .navbar .sidebar-minimized .sidebar .nav-item:hover > .dropdown-toggle {
+    background: WindowText; 
+}
+
+table.type01 tbody th {
+    background:#abeaed;
+}
+
+.entry-edit-head {
+    background: none repeat scroll 0 0 #2DCCD3;
+}*/

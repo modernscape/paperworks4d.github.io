@@ -1,0 +1,26 @@
+﻿.fc-icon, body .fc {
+    font-size: 16px;
+}
+
+.fc-center h3 {
+    /*font-size: 25px;*/
+    padding-right: 160px;
+}
+
+.fc-sun { 
+    color: red;
+    background-color: #FFCCCC;
+}
+.fc-sat {
+    color: blue;
+    background-color: #CCCCFF;
+}
+
+.fc-other-month{
+    color:#efefef;
+}
+
+a.fc-more {
+    font-weight:normal;
+    float: right;
+}

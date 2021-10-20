@@ -1,0 +1,665 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="BossCrawd - Template">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>
+        1
+    </title>
+
+    <!-- Icons -->
+    <link href="../../common/vendors/font-awesome/font-awesome.css"
+        rel="stylesheet">
+    <link
+        href="../../common/vendors/simple-line-icons/css/simple-line-icons.css"
+        rel="stylesheet">
+
+    <!-- Main styles for this application -->
+
+    <!-- <link href="common/css/custom.css" rel="stylesheet"> -->
+    <link href="../../common/css/custom.css" rel="stylesheet">
+    <!-- <link href="common/css/client.css" rel="stylesheet"> -->
+    <link href="../../common/css/client.css" rel="stylesheet">
+    <!-- back-movie -->
+    <link href="../../../../movie/back-movie.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        function cancelConfirm() {
+            if (confirm("取り消してよろしいですか？")) {} else {
+                return false;
+            }
+        }
+
+        function ReMailConfirm() {
+            if (confirm("招待メールを送信しますか？")) {} else {
+                return false;
+            }
+        }
+
+        function ReEntConfirm() {
+            if (confirm("招待画面に移動しますか？")) {} else {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+    <!-- back-movie -->
+    <div id="video-area">
+        <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline
+            muted autoplay loop>
+            <source src="../../../../movie/1034310245-preview.mp4"
+                type="video/mp4">
+            <p>動画を再生できる環境ではありません。</p>
+        </video>
+    </div>
+
+    <form name="aspnetForm" method="post" action="./recruit.aspx"
+        id="aspnetForm">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET"
+                value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT"
+                value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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">
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <div>
+            <input type="hidden" name="__VIEWSTATEGENERATOR"
+                id="__VIEWSTATEGENERATOR" value="138EE266">
+            <input type="hidden" name="__VIEWSTATEENCRYPTED"
+                id="__VIEWSTATEENCRYPTED" value="">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="4tT6Jz1YSTC6uSxdFzfdxDw/vhjOIDP42/OuflH8q3XR0j1h/VYT5BsoIADSvAxXCtxKbc5qU4ShkWqyEtpHyE+lxTLVQVKOOgj7Ol91riAvvCTEK0Pc3qq7ifimXHuY3ielAiPOcdOS1DCt4+LgXetz+ktnbmnNBIo4wEw5uE04I6ucHdu9gE2vjRS31EcdOvGDJuFSIDmI2x/zI2lrjfG9+CxYyCWZD4yXuuqdmHK7WORhnRNFTtDmLy7dqNemStdAYsEgNr/U9fRQKE9fn/m5sS8XOC5VJVDYa48yngcGbmI65FzSflw8jmn/3XGQdOD6Pp9feWb2OjhDcbJB4e5jXoESV0faGpUIWVFrSsVig312TISIpghKtPfI5RYg1j1AmCRSFC4e0VIEkFKNmxlx6EH8ayGhmuZoT43NxV6vNU0VAZJWRA4se/rqie8vuHzmPEBISpy/r1+MLfZMNg27TJN67/QTW4C9d7q9J7ecWaChvYykGe2IgfZApIRRZavXgAkiirk6Kt37w1s4ayi8Bf2h8EMhrSrQwdBXW18uKzf0nGIr7eXpVrfdezRKCu/7sE8PUzJkmsMjnyZgSy71qgR/39JAozwhfr7Ws3FGIY25pmb5C9h2uiSR8uZXWgdzzaHT7DManaF4hff34Wqux8bO1uE+zKir93FowEpN0EN8zS+dutqTgFp+NMzevblwwvn+SuUhDZxenApbUE2s8eBv+zkKGrxnLJ/awL/0ffTzK8Xp1465mHS2yOHsgKX2+YfCK/cSYsMdX7H1PMULquDF1+AgY+SV6PR1M3nlOC0i+sbSOFcePadmUAUciISETgJIIYYfLay9oVd3t+tCLMM442UhMLrxyntTG0s=">
+        </div>
+
+        <div class="modal fade" id="dangerModal" tabindex="-1" role="dialog"
+            aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-danger" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">お知らせ</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <table cellspacing="0" border="0"
+                                id="ctl00_gvMessage"
+                                style="width:100%;border-collapse:collapse;cursor: pointer;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">最新のお知らせはありません。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">閉じる</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <header class="app-header navbar">
+            <button
+                class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto"
+                type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler sidebar-toggler d-md-down-none"
+                type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="ctl00_lnkInfo" class="nav-link" data-toggle="modal"
+                        data-target="#dangerModal"
+                        href="javascript:__doPostBack('ctl00$lnkInfo','')"><i
+                            class="icon-bell"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="icon-globe"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center">
+                            <strong>会社情報</strong>
+                        </div>
+                        <a id="ctl00_lnk_contactus" class="dropdown-item"
+                            href="javascript:__doPostBack('ctl00$lnk_contactus','')"><i
+                                class="fa fa-envelope-o"></i>お問い合わせ</a>
+                        <a id="ctl00_lnk_company" class="dropdown-item"
+                            href="javascript:__doPostBack('ctl00$lnk_company','')"><i
+                                class="fa fa-building-o"></i>会社概要</a>
+                        <a id="ctl00_lnk_policy" class="dropdown-item"
+                            href="javascript:__doPostBack('ctl00$lnk_policy','')"><i
+                                class="fa fa-shield"></i>プライバシーポリシー</a>
+                        <a id="ctl00_lnk_tranlaw" class="dropdown-item"
+                            href="javascript:__doPostBack('ctl00$lnk_tranlaw','')"><i
+                                class="fa fa-newspaper-o"></i>特定商取引に基づく表記</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#"
+                        role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="../../common/images/avatars/user.png"
+                            class="img-avatar" alt="">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-center">
+                            <strong>設定</strong>
+                        </div>
+
+                        <a id="ctl00_linkLogout" class="dropdown-item"
+                            href="javascript:__doPostBack('ctl00$linkLogout','')"><i
+                                class="fa fa-lock"></i>ログアウト</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="navbar-toggler aside-menu-toggler" type="button"
+                style="display:none">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </header>
+
+        <div class="app-body">
+            <div class="sidebar">
+                <button class="sidebar-minimizer brand-minimizer"
+                    type="button"></button>
+
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a id="ctl00_linkDashBoard" class="nav-link"
+                                href="javascript:__doPostBack('ctl00$linkDashBoard','')"><i
+                                    class="icon-home"></i>トップページ</a>
+                        </li>
+
+                        <li class="nav-title">
+                            <span id="ctl00_TitleBussiness">ビジネスメニュー</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listBussiness_ctrl0_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listBussiness$ctrl0$linkMenu','')">
+                                <i class="icon-map"></i>
+                                <span
+                                    id="ctl00_listBussiness_ctrl0_NAMELabel">グループマップ</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listBussiness_ctrl1_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listBussiness$ctrl1$linkMenu','')">
+                                <i class="icon-user-follow"></i>
+                                <span
+                                    id="ctl00_listBussiness_ctrl1_NAMELabel">新規会員紹介</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listBussiness_ctrl2_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listBussiness$ctrl2$linkMenu','')">
+                                <i class="icon-calendar"></i>
+                                <span
+                                    id="ctl00_listBussiness_ctrl2_NAMELabel">セミナー情報</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listBussiness_ctrl3_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listBussiness$ctrl3$linkMenu','')">
+                                <i class="icon-calculator"></i>
+                                <span
+                                    id="ctl00_listBussiness_ctrl3_NAMELabel">コミッション明細</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listBussiness_ctrl4_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listBussiness$ctrl4$linkMenu','')">
+                                <i class="icon-handbag"></i>
+                                <span
+                                    id="ctl00_listBussiness_ctrl4_NAMELabel">オートシップ</span></a>
+                        </li>
+
+                        <li class="nav-title">
+                            <span id="ctl00_TitleSales">販促メニュー</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listSales_ctrl0_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listSales$ctrl0$linkMenu','')">
+                                <i class="icon-basket"></i>
+                                <span
+                                    id="ctl00_listSales_ctrl0_NAMELabel">商品購入</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listSales_ctrl1_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listSales$ctrl1$linkMenu','')">
+                                <i class="icon-layers"></i>
+                                <span
+                                    id="ctl00_listSales_ctrl1_NAMELabel">購入履歴</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listSales_ctrl2_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listSales$ctrl2$linkMenu','')">
+                                <i class="icon-cloud-download"></i>
+                                <span
+                                    id="ctl00_listSales_ctrl2_NAMELabel">書類ダウンロード</span></a>
+                        </li>
+
+                        <li class="nav-title">
+                            <span id="ctl00_TitleMine">マイメニュー</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listMine_ctrl0_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listMine$ctrl0$linkMenu','')">
+                                <i class="icon-lock"></i>
+                                <span
+                                    id="ctl00_listMine_ctrl0_NAMELabel">パスワード変更</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listMine_ctrl1_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listMine$ctrl1$linkMenu','')">
+                                <i class="icon-envelope"></i>
+                                <span
+                                    id="ctl00_listMine_ctrl1_NAMELabel">メールアドレス変更</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listMine_ctrl2_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listMine$ctrl2$linkMenu','')">
+                                <i class="icon-credit-card"></i>
+                                <span
+                                    id="ctl00_listMine_ctrl2_NAMELabel">カード情報</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="ctl00_listMine_ctrl3_linkMenu"
+                                class="nav-link"
+                                href="javascript:__doPostBack('ctl00$listMine$ctrl3$linkMenu','')">
+                                <i class="icon-credit-card"></i>
+                                <span
+                                    id="ctl00_listMine_ctrl3_NAMELabel">会員登録情報</span></a>
+                        </li>
+
+                        <li class="nav-title">
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- Main content -->
+            <main class="main">
+                <!-- Breadcrumb -->
+                <ol class="breadcrumb" style="display:none">
+                    <li class="breadcrumb-item">Home</li>
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item active">Dashboard</li>
+                    <!-- Breadcrumb Menu-->
+                    <li class="breadcrumb-menu d-md-down-none">
+                        <div class="btn-group" role="group"
+                            aria-label="Button group">
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="container-fluid">
+                    <div class="animated fadeIn">
+                        <div class="row">　</div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fa fa-user"></i>紹介者の情報
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="cvv">紹介者ID /
+                                                        お名前</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <input
+                                                        name="ctl00$cpBody$txtRecruiterid"
+                                                        type="text"
+                                                        value="0000000001-01"
+                                                        readonly="readonly"
+                                                        id="ctl00_cpBody_txtRecruiterid"
+                                                        class="form-control"
+                                                        placeholder="ID">
+                                                </div>
+                                                <div class="col-7">
+                                                    <input
+                                                        name="ctl00$cpBody$txtRecruiterName"
+                                                        type="text"
+                                                        value="テストテスト"
+                                                        readonly="readonly"
+                                                        id="ctl00_cpBody_txtRecruiterName"
+                                                        class="form-control"
+                                                        placeholder="お名前">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="cvv">メールアドレス</label>
+                                                <div class="input-group">
+                                                    <input
+                                                        name="ctl00$cpBody$txtRecruiterAdr"
+                                                        type="text"
+                                                        id="ctl00_cpBody_txtRecruiterAdr"
+                                                        class="form-control"
+                                                        placeholder="メールアドレス">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="cvv">上位者ID /
+                                                        お名前</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <div class="input-group">
+                                                        <input
+                                                            name="ctl00$cpBody$txtChain"
+                                                            type="text"
+                                                            id="ctl00_cpBody_txtChain"
+                                                            class="form-control"
+                                                            placeholder="ID">
+                                                        <span
+                                                            class="input-group-prepend">
+                                                            <a id="ctl00_cpBody_btnSearch"
+                                                                class="btn btn-secondary "
+                                                                href="javascript:__doPostBack('ctl00$cpBody$btnSearch','')"><i
+                                                                    class="fa fa-search"></i>
+                                                                検索</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <input
+                                                        name="ctl00$cpBody$txtChainName"
+                                                        type="text"
+                                                        readonly="readonly"
+                                                        id="ctl00_cpBody_txtChainName"
+                                                        class="form-control"
+                                                        placeholder="お名前"
+                                                        style="color:Red;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <label
+                                                        for="cvv">BC指定</label>
+                                                    <select
+                                                        name="ctl00$cpBody$ddlBranch"
+                                                        id="ctl00_cpBody_ddlBranch"
+                                                        class="form-control">
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-7">
+                                                    <label
+                                                        for="cvv">ライン指定</label>
+                                                    <select
+                                                        name="ctl00$cpBody$ddlLineType"
+                                                        id="ctl00_cpBody_ddlLineType"
+                                                        class="form-control">
+                                                        <option value="指定なし">
+                                                            指定なし</option>
+                                                        <option
+                                                            value="左ラインを指定する">
+                                                            左ラインを指定する</option>
+                                                        <option
+                                                            value="右ラインを指定する">
+                                                            右ラインを指定する</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i class="fa fa-user-plus"></i>新規お客様の情報
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="cvv">お名前（姓 /
+                                                        名）</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <input
+                                                        name="ctl00$cpBody$txtName_Last"
+                                                        type="text"
+                                                        id="ctl00_cpBody_txtName_Last"
+                                                        class="form-control"
+                                                        placeholder="姓">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input
+                                                        name="ctl00$cpBody$txtName_First"
+                                                        type="text"
+                                                        id="ctl00_cpBody_txtName_First"
+                                                        class="form-control"
+                                                        placeholder="名">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="cvv">メールアドレス</label>
+                                                <div class="input-group">
+                                                    <input
+                                                        name="ctl00$cpBody$txtMailAddress"
+                                                        type="text"
+                                                        id="ctl00_cpBody_txtMailAddress"
+                                                        class="form-control"
+                                                        placeholder="メールアドレス">
+                                                    <span
+                                                        class="input-group-prepend">
+                                                        <a id="ctl00_cpBody_btnTestSendmail"
+                                                            class="btn btn-secondary "
+                                                            href="javascript:__doPostBack('ctl00$cpBody$btnTestSendmail','')"><i
+                                                                class="fa fa-envelope-o"></i>
+                                                            テスト送信</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="cvv">　</label>
+                                                    <center>
+                                                        <input type="submit"
+                                                            name="ctl00$cpBody$btnSendMail"
+                                                            value="紹介メール送信"
+                                                            id="ctl00_cpBody_btnSendMail"
+                                                            class="btn btn-primary"
+                                                            style="width:120px;margin-top: 8px;">
+                                                        　　
+                                                        <input type="submit"
+                                                            name="ctl00$cpBody$btnGotoReg"
+                                                            value="紹介画面へ"
+                                                            id="ctl00_cpBody_btnGotoReg"
+                                                            class="btn btn-primary"
+                                                            style="width:120px;margin-top: 8px;">
+                                                        <br>
+
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="alert alert-dark" role="alert">
+                                    <p>
+                                        <small class="text-muted">※
+                                            紹介メール送信・・・入力された新規に登録される方のメールアドレスへメールを送信します。メール内に記載のURLから登録を行います。</small><br>
+                                        <small class="text-muted">※
+                                            紹介画面へ・・・新規に登録される方へメールを配信せず、登録画面へ移動します。</small><br>
+                                        <small class="text-muted">※
+                                            フリーメールアドレスは正常に送信されない場合がありますのでご注意ください。</small><br>
+                                        <small class="text-muted">※
+                                            上位者指定で組織の系譜外、該当なしの場合はそのまま進めますが、上位者は設定されません。</small><br>
+                                        <small class="text-muted">※
+                                            上位者指定でラインのみの指定はできません。</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <i
+                                            class="fa fa-database"></i>新規お客様ID発行状況
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <table
+                                                class="type01 table-hover table-striped"
+                                                cellspacing="0" cellpadding="0"
+                                                rules="all" border="0"
+                                                id="ctl00_cpBody_gvRecruitStatus"
+                                                style="width:100%;border-collapse:collapse;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="5">
+                                                            有効期間内のご招待履歴はありません
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <span style="float: right">
+                                    <a id="ctl00_cpBody_linkTop"
+                                        href="javascript:__doPostBack('ctl00$cpBody$linkTop','')">トップページに戻る</a>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="breadcrumb ol-footer">
+                    <span>Copyright (C) <a id="ctl00_lnkCompany"
+                            href="#">システムコンサルティング株式会社</a> All Rights
+                        Reserved.</span>
+                </div>
+            </main>
+        </div>
+    </form>
+
+    <!-- /.app-footer -->
+    <!-- Bootstrap and necessary plugins -->
+    <script type="text/javascript"
+        src="../../common/vendors/jQuery/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="../../common/vendors/popper/popper.min.js"></script>
+    <script type="text/javascript"
+        src="../../common/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- main scripts -->
+    <script type="text/javascript" src="../../common/js/base/app.js"></script>
+    <!-- Plugins and scripts required by this views -->
+    <!-- Custom scripts required by this view -->
+    <script type="text/javascript" src="../../common/js/base/views/main.js">
+    </script>
+    <!-- Custom scripts required by this view -->
+    <script type="text/javascript" src="../../common/js/base/views/tooltips.js">
+    </script>
+</body>
+
+</html>
