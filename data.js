@@ -69,7 +69,7 @@ var exItems = [{
   date: "2021.07",
   description: "3D NAVメニューの提案<br>（three.js、ライノセラス使用）",
   urls: [
-    "http://btw.html.xdomain.jp/paperworks3d/index_2.html"
+    "http://btw.html.xdomain.jp/paperworks3d/index.html"
   ],
 },
 {
